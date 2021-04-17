@@ -1,0 +1,123 @@
+.main-header {
+    background-color: $white-color;
+    box-shadow: $box-shadow;
+    font-family: $title-font;
+}
+
+.main-header__container {
+    // background-color: red;
+}
+
+.main-header__logo {}
+
+.main-header__search {
+    .search {
+        outline: none;
+        border: none;
+        border-radius: $border-radius;
+        background-color: $color-search;
+        color: $color-text;
+    }
+
+    .search:focus {
+        box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+
+.main-header__menu {}
+
+.main-header__user {
+    border-radius: 25px;
+    background-color: $color-search;
+}
+
+.main-header__user-container {
+}
+
+.user_photo {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+}
+
+.bxs-help-circle,
+.bxs-bell,
+.bxs-chevron-down {
+    color: rgb(68, 67, 67);
+}
+
+// tooltip
+.help-tooltip,
+.notification-tooltip {
+    background-color: #242424;
+    color: rgb(245, 244, 244);
+    transition-property: transform;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+}
+
+.help-tooltip::before,
+.notification-tooltip::before {
+    width: 15px;
+    height: 15px;
+    content: '';
+    display: block;
+    background-color: #242424;
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.main-header__notification,
+.main-header__help {
+    &:hover .help-tooltip {
+        transform: scale(1) translateX(-50%);
+    }
+
+    &:hover .notification-tooltip {
+        transform: scale(1) translateX(-50%);
+    }
+}
+
+.main-header-menu-user {
+    color: $color-text;
+    box-shadow: 0 0  12px 0 rgba(0, 0, 0, 0.2);
+    background-color: $white-color;
+    border-radius: $border-radius;
+    transform: translateY(-300px);
+    transition: transform .2s linear;
+    &::before {
+        width: 15px;
+        height: 15px;
+        content: '';
+        display: block;
+        position: absolute;
+        top: -5px;
+        left: 70%;
+        background-color: $white-color;
+        transform: rotate(45deg);
+    }
+    a{
+        color: $color-text
+    }
+}
+.menu-active{
+    transform: translateY(0);
+    z-index: $z-modal;
+}
+
+
+.header:hover,
+.body>a:hover, .footer:hover{
+    background-color: $color-border;
+}
+

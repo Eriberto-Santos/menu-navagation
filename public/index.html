@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Menu-user</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header__container">
+            <span class="main-header__logo">
+                <img src="assets/img/96x96.png" alt="">
+            </span>
+            <div class="main-header__search">
+                <input class="search" type="search" placeholder="¿Qué buscaremos hoy?">
+            </div>
+            <div class="main-header__menu">
+                <div class="main-header__help"><div class="help-tooltip">Help</div><i class='bx bxs-help-circle'></i></div>
+                <div class="main-header__notification"><div class="notification-tooltip">Notification</div><i class='bx bxs-bell'></i></div>
+                <div class="main-header__user" id="button-menu">
+                   <div class="main-header__user-container">
+                        <div class="user_photo"><img src="assets/img/user.jpg" alt=""></div>
+                        <i class='bx bxs-chevron-down'></i>
+                   </div>
+                   <div class="main-header-menu-user" id="menu">
+                       <div class="header">
+                           <p>Andrea contreras</p>
+                       </div>
+                       <nav class="body">
+                           <a href="#">Perfil</a>
+                           <a href="#">Subscripción</a>
+                       </nav>
+                       <div class="footer"><a href="#">logout</a></div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
